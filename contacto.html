@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       </section>
+          <h2>Mensajes Recibidos</h2>
+  <table border="5">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Mensaje</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td colspan="4" style="text-align:center; font-weight:bold; background:#f0f0f0;">
+          Mensajes pendientes de respuesta
+        </td>
+      </tr>
+
+      <tr>
+        <td>Juan Pérez</td>
+        <td>juan@hotmail.com</td>
+        <td>Quiero info de los cursos</td>
+        <td>Pendiente</td>
+      </tr>
+
+      <tr>
+        <td>María Gómez</td>
+        <td>maria@gmail.com</td>
+        <td>¿Cuándo empieza el próximo módulo?</td>
+        <td>Pendiente</td>
+      </tr>
+
+      <!-- Otra fila combinada para indicar mensajes ya respondidos -->
+      <tr>
+        <td colspan="4" style="text-align:center; font-weight:bold; background:#dff0d8;">
+          Mensajes respondidos
+        </td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Carlos López</td> <!-- rowspan para agrupar -->
+        <td rowspan="2">carlos@yahoo.com</td>
+        <td>Gracias por la info</td>
+        <td>Respondido</td>
+      </tr>
+      <tr>
+        <td>Confirmo inscripción al curso</td>
+        <td>Respondido</td>
+      </tr>
+
+    </tbody>
+  </table>
+    <h2> Te invitamos a que nos completes vos tambien el formulario!!!</h2>
+        <form
+        action="https://formspree.io/f/mldwynjy"   method="POST">
+           <label for="nombre">Nombre:</label>
+     <input type="text" id="nombre" name="nombre" required>
+    
+     <label for="email">Correo electrónico:</label>
+     <input type="email" id="email" name="email" required>
+    
+     <label for="mensaje">Mensaje:</label>
+     <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+    
+     <button type="submit">Enviar</button>
+</form>
+            
+        
+      <section>
+ <a href="./index.html">Home</a>
+</body>
+</html>
