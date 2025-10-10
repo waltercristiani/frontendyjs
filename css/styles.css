@@ -196,3 +196,77 @@ footer {
   object-fit: contain;
 }
 
+
+/* =========================
+   MEDIA QUERIES - RESPONSIVE
+   ========================= */
+
+/* Para pantallas chicas (celulares) */
+@media (max-width: 768px) {
+
+  /* --- Header --- */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* --- Hero section --- */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  /* --- Títulos --- */
+  .titulo {
+    font-size: 40px; /* antes 80px */
+  }
+
+  /* --- Grid de productos --- */
+  .grid-productos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* --- Carrusel --- */
+  .carousel-container img {
+    width: 50%; /* imágenes más grandes en móvil */
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    max-width: 80%;
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .titulo {
+    font-size: 60px;
+  }
+}
