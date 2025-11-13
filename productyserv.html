@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos y Servicios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-   
-        <h3 class="titulo">Videos</h3>
 
-        <!-- Video de YouTube embebido -->
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/uscAEQGflPI?si=P6kZTYnaNubg3sYu">
-    </iframe>
 
-        <p>    Vamos por el principio: ¿Que es un Circuito Cerrado de TV, CCTV?   </p>
-        
 
-    <a href="./index.html">Home</a>
+    <header>
+        <h1>FW Seguridad Electrónica</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./productyserv.html">Productos y Servicios</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li class="login-register"> <a href="./contacto.html">
+                        <span class="material-icons icono-usuario">person</span>
+                        <span class="texto-usuario">Iniciar sesión</span></a></li>              
+                <li><div class="cart-icon" id="cart-icon">
+                        🛒 <span id="cart-count">0</span>
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </nav>
+    </header>
+
+    <div class="productos-container">
+        <div class="producto">
+            <img src="https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_04_45618/ProductImage/1_0_01_04_45618_676336018_crop_thumb.png"
+                alt="Cámara Dahua">
+            <h3>Cámara Dahua 2MP</h3>
+            <p>$45.000</p>
+            <input type="number" min="1" value="1" class="cantidad">
+            <button class="agregar-carrito" data-nombre="Cámara Dahua 2MP" data-precio="45000">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://material.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_23_15937/ProductImage/1_0_01_23_15937_511732658_crop_thumb.png"
+                alt="DVR Hikvision 8CH">
+            <h3>DVR Hikvision 8CH</h3>
+            <p>$120.000</p>
+            <input type="number" min="1" value="1" class="cantidad">
+            <button class="agregar-carrito" data-nombre="DVR Hikvision 8CH" data-precio="120000">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_979195-MLA96112482199_102025-F.webp" alt="Disco Duro 1TB">
+            <h3>Disco Duro 1TB</h3>
+            <p>$65.000</p>
+            <input type="number" min="1" value="1" class="cantidad">
+            <button class="agregar-carrito" data-nombre="Disco Duro 1TB" data-precio="65000">Agregar</button>
+        </div>
+    </div>
+    <div id="carrito-panel" class="carrito-panel">
+        <h2>Tu Carrito</h2>
+        <div id="carrito-items"></div>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="cerrar-carrito">Cerrar</button>
+    </div>
+
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>

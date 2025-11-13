@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+
 <body>
 
-    
+
     <header>
         <h1>FW Seguridad Electrónica</h1>
         <nav>
@@ -19,58 +21,82 @@
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li class="login-register"> <a href="./contacto.html">
-                    <span class="material-icons icono-usuario">person</span>
-                    <span class="texto-usuario">Iniciar sesión</span></a>
-  
-</li>
+                        <span class="material-icons icono-usuario">person</span>
+                        <span class="texto-usuario">Iniciar sesión</span></a>
+
+                </li>
 
 
             </ul>
+            <div class="cart-icon" id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+
         </nav>
     </header>
 
     <main>
-    <section class="hero" id="inicio">
-        <div class="hero-text">
-            <h2>Protegemos lo que más importa</h2>
-            <p>Ofrecemos soluciones de seguridad electrónica para hogares y empresas. 
-               Sistemas de alarmas, cámaras de vigilancia y controles de acceso.</p>
-            <a href="./productyserv.html" class="btn">Ver Productos</a>
-        </div>
-        <img src="./img/D_NQ_NP_801264-MLA74671147907_022024-O.webp" alt="Cámaras de seguridad">
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <h2>Protegemos lo que más importa</h2>
+                <p>Ofrecemos soluciones de seguridad electrónica para hogares y empresas.
+                    Sistemas de alarmas, cámaras de vigilancia y controles de acceso.</p>
+                <a href="./productyserv.html" class="btn">Ver Productos</a>
+            </div>
+            <img src="./img/D_NQ_NP_801264-MLA74671147907_022024-O.webp" alt="Cámaras de seguridad">
+       
+                <!-- <h2>Carrito de Compras</h2>
+                <div id="lista-carrito"></div>
+                <h3>Total: $<span id="total">0</span></h3> -->
+            </section>
 
-    <!-- Sección Productos y Servicios -->
-<section id="productos" class="productos">
-    <h2 class="titulo">Productos y Servicios</h2>
-    <div class="grid-productos">
-      <a href="./productyserv.html" class="card-link">
-        <div class="card">
-            <img src="./img/iconoalarma.png" alt="Sistema de Alarmas">
-            <h3>Sistemas de Alarmas</h3>
-            <p>Instalación y monitoreo de alarmas para hogares y empresas.</p>
-        </div>
-      </a>
 
-      <a href="./productyserv.html" class="card-link">
-        <div class="card">
-            <img src="./img/iconocam.png" alt="Cámaras de Seguridad">
-            <h3>Cámaras de Seguridad</h3>
-            <p>Circuito cerrado de TV (CCTV).</p>
-        </div>
-      </a>
-   
-      <a href="./productyserv.html" class="card-link">
-        <div class="card">
-            <img src="./img/iconoctrlaccess.png" alt="Control de Acceso">
-            <h3>Control de Acceso</h3>
-            <p>Lectores biométricos, tarjetas de proximidad y software de control.</p>
-        </div>
-      </a>
-    </div>
-</section>
+            <!-- Sección Productos y Servicios -->
+            <section id="productos" class="productos">
+                <h2 class="titulo">Productos y Servicios</h2>
+                <div class="grid-productos">
+                    <a href="./productyserv.html" class="card-link">
+                        <div class="card">
+                            <img src="./img/iconoalarma.png" alt="Sistema de Alarmas">
+                            <h3>Sistemas de Alarmas</h3>
+                            <p>Instalación y monitoreo de alarmas para hogares y empresas.</p>
+                        </div>
+                    </a>
 
-</main>
+                    <a href="./productyserv.html" class="card-link">
+                        <div class="card">
+                            <img src="./img/iconocam.png" alt="Cámaras de Seguridad">
+                            <h3>Cámaras de Seguridad</h3>
+                            <p>Circuito cerrado de TV (CCTV).</p>
+                        </div>
+                    </a>
 
-<footer>
+                    <a href="./productyserv.html" class="card-link">
+                        <div class="card">
+                            <img src="./img/iconoctrlaccess.png" alt="Control de Acceso">
+                            <h3>Control de Acceso</h3>
+                            <p>Lectores biométricos, tarjetas de proximidad y software de control.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-</footer>
+          
+                <!-- <h2>🛒 Carrito</h2>
+                <div id="carrito"></div>
+                <p>Total: $<span id="total">0</span></p>
+                <p>Productos en carrito: <span id="contador-carrito">0</span></p>
+            </section> -->
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
