@@ -50,6 +50,8 @@ header h1 {
     color: black;
     font-weight: bold;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list li a:hover {
@@ -340,4 +342,46 @@ footer {
 .carrito-item {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
+}
+
+.producto img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.detalle-producto {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#detalle-producto img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+#cerrar-detalle {
+    float: right;
+    border: none;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.carrito-item img {
+    width: 70px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
